@@ -4,8 +4,19 @@
     {
         static void Main(string[] args)
         {
-            var path = @"C:\Users\yarin\Desktop\האקר יו לימודים\c# oop\Lesson12OOP\bin\Debug\net6.0\new\yarin13.txt";
-            var destFileName = @"C:\Users\yarin\Desktop\האקר יו לימודים\c# oop\Lesson12OOP\bin\Debug\net6.0\new\move\yarin15.txt";
+            int status = 0;
+
+            if(status == 1 )
+            status = (int)Status.StatusSuccess;
+            status = (int)Status.StatusFail;
+            string day = Days.Sunday.ToString();
+            if (status == 2)
+            {
+
+            }
+
+            //var path = @"C:\Users\yarin\Desktop\האקר יו לימודים\c# oop\Lesson12OOP\bin\Debug\net6.0\new\yarin13.txt";
+            //var destFileName = @"C:\Users\yarin\Desktop\האקר יו לימודים\c# oop\Lesson12OOP\bin\Debug\net6.0\new\move\yarin15.txt";
             //string data = "bla bla";
             //File.WriteAllText(path, data);//גם יוצרת את הקובץ וגם כותבת לקובץ
             //Console.WriteLine(File.ReadAllText(path));
@@ -28,5 +39,20 @@
             //}
 
         }
+    }
+
+    //enum int
+    enum Status
+    {
+        //סטטוס הצלחה
+        StatusSuccess = 2,
+        StatusFail = 2,
+    }
+
+    // enum string
+    enum Days
+    {
+        Sunday,
+        
     }
 }
