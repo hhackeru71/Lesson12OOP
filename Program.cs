@@ -5,21 +5,42 @@
         static void Main(string[] args)
         {
 
-       
+            //לקבל את התאריך של היום להוסיף 3 ימים לתאריך ע"י adddays
+            //להדפיס את התאריך בפורמט yyyy-MM-dd 
+            //// DateTime dateTime = new DateTime(1991,01,03);
+            //ליצור אובייקט מתוך מחלקה של datetime לפי תאריך 
+            //2022/01/05
+            //להדפיס את השנה חודש ויום כל אחד בשורה נפרדת
+            var date = DateTime.Now.AddDays(3);
+            Console.WriteLine(date.ToString("yyyy-MM-dd"));
+            DateTime dateTime = new DateTime(2022, 01, 05);
+            Console.WriteLine(dateTime.Year);
+            Console.WriteLine(dateTime.Month);
+            Console.WriteLine(dateTime.Day);
 
 
-            var path = @"C:\Users\yarin\Desktop\האקר יו לימודים\c# oop\Lesson12OOP\bin\Debug\net6.0\new\yarin16.txt";
-            string data = "bla bla";
-            File.WriteAllText(path, data);
-            File.Delete(path);
-            if (File.Exists(path))
-            {
-                Console.WriteLine(StatusFile.Exist);
-            }
-            else
-            {
-                Console.WriteLine(StatusFile.NotExist);
-            }
+
+
+
+            // Console.WriteLine(dateTime);
+            //Console.WriteLine(date);
+            //Console.WriteLine(date.ToString("dd/MM/yyyy"));
+            //Console.WriteLine(date.ToString("yyyy/MM/dd"));
+            //Console.WriteLine(date.ToString("yyyy-MM-dd"));
+            // Console.WriteLine(date.Month);
+
+            //var path = @"C:\Users\yarin\Desktop\האקר יו לימודים\c# oop\Lesson12OOP\bin\Debug\net6.0\new\yarin16.txt";
+            //string data = "bla bla";
+            //File.WriteAllText(path, data);
+            //File.Delete(path);
+            //if (File.Exists(path))
+            //{
+            //    Console.WriteLine(StatusFile.Exist);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(StatusFile.NotExist);
+            //}
 
 
 
