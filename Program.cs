@@ -4,6 +4,25 @@
     {
         static void Main(string[] args)
         {
+
+       
+
+
+            var path = @"C:\Users\yarin\Desktop\האקר יו לימודים\c# oop\Lesson12OOP\bin\Debug\net6.0\new\yarin16.txt";
+            string data = "bla bla";
+            File.WriteAllText(path, data);
+            File.Delete(path);
+            if (File.Exists(path))
+            {
+                Console.WriteLine(StatusFile.Exist);
+            }
+            else
+            {
+                Console.WriteLine(StatusFile.NotExist);
+            }
+
+
+
             //ליצור enum StatusFile
             //Exist
             //NotExist
@@ -53,6 +72,19 @@
         }
     }
 
+    enum DocumentOperation
+    {
+        Load =1,
+        Save =2,
+        Discard =3
+    }
+
+    enum DocumentState
+    {
+        Saved =1,
+        NotSaved =2
+    }
+
     //enum int
     enum Status
     {
@@ -65,6 +97,12 @@
     enum Days
     {
         Sunday,
-        
+
+    }
+
+    enum StatusFile
+    {
+        Exist,
+        NotExist
     }
 }
